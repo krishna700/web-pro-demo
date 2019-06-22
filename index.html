@@ -8,19 +8,57 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-     <h1>Hello world!</h1>
-    <!--
+     <h1 id="title">Job applicaion Form</h1>
+     <p id="description">
+     	Let us know how we can improve freeCodeCamp
+     </p>
 
-    Hello Camper!
+     <form id="survey-form">
+     	<label id="name-label">Name</label><br>
+     	<input type="text" id="name" placeholder="Name" required><br>
+     	<label id="email-label" >Email</label><br>
+     	<input type="email" id="email" placeholder="Email" required><br>
+     	<label id="number-label">Number</label><br>
+     	<input type="number" id="number"  min="10" max="10" placeholder="Number"><br>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+     	 <select id="dropdown">
+         <option value="left">Front-end</option>
+         <option value="right">Back-end</option>
+         <option value="conservative">Full-stack</option>
+         <option value="nazi">App development</option>
+         </select><br>
 
-    - The freeCodeCamp Team
+         <label for="Gender">Gender</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
 
-    -->
+
+          <input type="checkbox" name="morethantwo" value="morethantwo"> I have experience 2+ years<br>
+      <input type="checkbox" name="lessthantwo" value="lessthantwo"> I have experience less than 2<br>
+      <input type="checkbox" name="fresher" value="fresher"> I am a fresher<br>
+       
+
+      <fieldset>
+    <legend>Why us?</legend>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more explain why you want to work with us?</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">Please upload contact details for 2 references</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+      <button>Attach Files</button></p>
+  </fieldset>
+  <button type="submit" id="submit">Send your application</button>
+</form>
+     	  
+
+
     <script  src="js/index.js"></script>
   </body>
 </html>
